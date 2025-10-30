@@ -30,7 +30,7 @@ func getPrices(signs []string) ([]int, []int) {
 	prices = append(prices, answers[2])
 	finalStr := fmt.Sprintf("%vx1 + %vx2 + %vx3", prices[0], prices[1], prices[2])
 	for i, sign := range signs {
-		if sign == "=>" {
+		if sign == "<=" {
 			prices = append(prices, 0)
 			base = append(base, 0)
 			finalStr += fmt.Sprintf(" + 0d%v", i)

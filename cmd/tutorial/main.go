@@ -8,6 +8,8 @@ func main() {
 	fmt.Scan(&equasionCount)
 
 	equasions, signs := getEquasions(equasionCount)
+	fmt.Println(equasions)
 
 	prices, base := getPrices(signs)
+	fmt.Println(prices, base)
 }
